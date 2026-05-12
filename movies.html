@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Movies</title>
+  <link rel="stylesheet" href="movies.css">
+  
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <div class="logo">
+      MOVIEFLIX
+    </div>
+
+    <div class="menu">
+
+      <a href="index.html">Home</a>
+
+      <a href="movies.html">Movies</a>
+
+      <a href="series.html">Series</a>
+
+      <a href="popular.html">Popular</a>
+	  
+	  <a href="membership.html">Membership</a>
+
+    </div>
+
+    <div class="icons">
+
+      <input
+      type="text"
+      id="search"
+      placeholder="Search Movie">
+
+      <i class="fa-solid fa-user"></i>
+
+    </div>
+
+  </div>
+
+  <div class="page-title">
+
+    <h1>Movies Collection</h1>
+
+    <select id="category">
+
+      <option value="all">All</option>
+
+      <option value="Action">Action</option>
+
+      <option value="Drama">Drama</option>
+
+      <option value="Sci-Fi">Sci-Fi</option>
+
+      <option value="Comedy">Comedy</option>
+
+    </select>
+
+  </div>
+
+
+
+<div class="category-section action-section">
+
+  <h2>Action Movies</h2>
+
+  <div class="movies-container" id="actionMovies">
+
+  </div>
+
+</div>
+
+
+<div class="category-section drama-section">
+
+  <h2>Drama Movies</h2>
+
+  <div class="movies-container" id="dramaMovies">
+
+  </div>
+
+</div>
+
+
+<div class="category-section scifi-section">
+
+  <h2>Sci-Fi Movies</h2>
+
+  <div class="movies-container" id="scifiMovies">
+
+  </div>
+
+</div>
+
+
+<div class="category-section comedy-section">
+
+  <h2>Comedy Movies</h2>
+
+  <div class="movies-container" id="comedyMovies">
+
+  </div>
+
+</div>
+
+
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <span id="close">&times;</span>
+
+      <img id="modalImg">
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalDesc"></p>
+
+    </div>
+
+  </div>
+
+  <script src="movies.js"></script>
+
+</body>
+</html>

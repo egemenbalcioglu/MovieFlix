@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+
+    <div class="logo">
+      MOVIEFLIX
+    </div>
+
+    <div class="menu">
+      <a href="index.html">Home</a>
+	  
+      <a href="movies.html">Movies</a>
+	  
+	  <a href="series.html">Series</a>
+	  
+      <a href="popular.html">Popular</a>
+	  
+	  <a href="membership.html">Membership</a>
+	  
+    </div>
+
+    <div class="icons">
+      <input type="text" id="search" placeholder="Film Ara">
+      <i class="fa-solid fa-user"></i>
+    </div>
+
+  </div>
+<div class="slider">
+
+  <div class="slider-overlay"></div>
+
+  <div class="slider-content">
+
+    <h1 id="sliderTitle"></h1>
+
+    <p id="sliderDesc"></p>
+
+    <button id="playBtn">
+
+      <i class="fa-solid fa-play"></i>
+
+      Play
+
+    </button>
+
+  </div>
+
+</div>
+  <div class="container">
+
+    <h2>Popular Movies</h2>
+
+    <div class="movie-list" id="movieList">
+
+
+    </div>
+
+  </div>
+  <div class="container" id="series">
+
+  <h2>Popular Series</h2>
+
+  <div class="movie-list" id="seriesList">
+
+  </div>
+
+</div>
+
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <span id="close">&times;</span>
+
+      <img id="modalImg">
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalDesc"></p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

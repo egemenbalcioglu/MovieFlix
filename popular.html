@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Popular</title>
+
+  <link rel="stylesheet" href="popular.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <div class="logo">
+      MOVIEFLIX
+    </div>
+
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="popular.html">Popular</a>
+      <a href="membership.html">Membership</a>
+    </div>
+
+    <div class="icons">
+      <i class="fa-solid fa-user"></i>
+    </div>
+
+  </div>
+
+  <div class="page-title">
+
+    <div>
+      <h1>Popular Titles</h1>
+      <p>Explore popular movies and series by IMDb rating.</p>
+    </div>
+
+    <select id="sortSelect">
+      <option value="default">Default Order</option>
+      <option value="high">IMDb: High to Low</option>
+      <option value="low">IMDb: Low to High</option>
+    </select>
+
+  </div>
+
+  <div class="popular-container" id="popularContainer">
+
+  </div>
+
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <span id="close">&times;</span>
+
+      <img id="modalImg">
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalDesc"></p>
+
+      <div class="modal-info">
+        <span id="modalType"></span>
+        <span id="modalRating"></span>
+        <span id="modalPopularity"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="popular.js"></script>
+
+</body>
+</html>

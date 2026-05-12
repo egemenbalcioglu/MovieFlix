@@ -1,0 +1,252 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#111;
+  color:white;
+  font-family:'verdana', sans-serif;
+}
+.navbar{
+
+  background:black;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:20px;
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+}
+
+.logo{
+
+  color:red;
+
+  font-size:30px;
+
+  font-weight:bold;
+}
+
+.menu a{
+
+  color:white;
+
+  text-decoration:none;
+
+  margin:10px;
+}
+
+.menu a:hover{
+
+  color:red;
+}
+
+.icons input{
+
+  padding:8px;
+
+  border:none;
+
+  border-radius:5px;
+}
+
+.page-title{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:40px;
+}
+
+.page-title h1{
+
+  font-size:40px;
+}
+
+#category{
+
+  padding:10px 15px;
+
+  background:#222;
+
+  color:white;
+
+  border:none;
+
+  border-radius:5px;
+
+  font-size:16px;
+}
+
+
+.movies-container{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:25px;
+
+  padding:40px;
+}
+
+.movie-card{
+
+  width:220px;
+
+  background:#1c1c1c;
+
+  border-radius:10px;
+
+  overflow:hidden;
+
+  transition:0.3s;
+
+  cursor:pointer;
+}
+
+.movie-card:hover{
+
+  transform:scale(1.05);
+}
+
+
+.movie-card img{
+
+  width:100%;
+
+  height:320px;
+
+  object-fit:cover;
+}
+
+.movie-info{
+
+  padding:15px;
+}
+
+.movie-info h3{
+
+  margin-bottom:10px;
+}
+
+.movie-info p{
+
+  color:#aaa;
+}
+
+.modal{
+
+  position:fixed;
+
+  left:0;
+  top:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,0.8);
+
+  display:none;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.modal-content{
+
+  background:#222;
+
+  width:400px;
+
+  padding:20px;
+
+  border-radius:10px;
+
+  text-align:center;
+
+  position:relative;
+}
+
+.modal-content img{
+
+  width:100%;
+
+  border-radius:10px;
+}
+
+.modal-content h2{
+
+  margin-top:15px;
+}
+
+.modal-content p{
+
+  margin-top:10px;
+
+  color:#ccc;
+}
+
+#close{
+
+  position:absolute;
+
+  top:10px;
+
+  right:20px;
+
+  font-size:30px;
+
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+  }
+
+  .page-title{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    align-items:flex-start;
+  }
+
+  .movies-container{
+
+    justify-content:center;
+  }
+
+}
+
+.category-section{
+
+  padding:20px 40px;
+}
+
+.category-section h2{
+
+  margin-bottom:20px;
+
+  font-size:28px;
+}

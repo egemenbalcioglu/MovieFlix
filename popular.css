@@ -1,0 +1,202 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#111;
+  color:white;
+  font-family:verdana;
+}
+
+.navbar{
+  background:black;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo{
+  color:red;
+  font-size:30px;
+  font-weight:bold;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+}
+
+.menu a:hover{
+  color:red;
+}
+
+.icons i{
+  font-size:20px;
+  cursor:pointer;
+}
+
+.page-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:40px;
+}
+
+.page-title h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.page-title p{
+  color:#aaa;
+}
+
+#sortSelect{
+  padding:10px 15px;
+  background:#222;
+  color:white;
+  border:none;
+  border-radius:5px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.popular-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  padding:40px;
+}
+
+.popular-card{
+  width:230px;
+  background:#1c1c1c;
+  border-radius:10px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.popular-card:hover{
+  transform:scale(1.05);
+}
+
+.popular-card img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+}
+
+.popular-info{
+  padding:15px;
+}
+
+.popular-info h3{
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+.popular-info p{
+  color:#aaa;
+  margin-bottom:8px;
+}
+
+.badge{
+  display:inline-block;
+  background:#e50914;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.rating{
+  color:gold;
+  font-weight:bold;
+}
+
+.modal{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:200;
+}
+
+.modal-content{
+  background:#222;
+  width:420px;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  position:relative;
+}
+
+.modal-content img{
+  width:100%;
+  border-radius:10px;
+}
+
+.modal-content h2{
+  margin-top:15px;
+}
+
+.modal-content p{
+  margin-top:10px;
+  color:#ccc;
+  line-height:1.5;
+}
+
+.modal-info{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:15px;
+}
+
+.modal-info span{
+  background:#111;
+  padding:8px 12px;
+  border-radius:20px;
+  color:#ddd;
+}
+
+#close{
+  position:absolute;
+  top:10px;
+  right:20px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .page-title{
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-start;
+  }
+
+  .popular-container{
+    justify-content:center;
+  }
+
+}
